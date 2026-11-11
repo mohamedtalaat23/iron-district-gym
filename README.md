@@ -3,7 +3,7 @@
 **Name:** Mohamed Ahmed Hussein Talaat  
 **Student ID:** 224120930
 
-[Live website](https://mohamedtalaat23.github.io/iron-district-gym/) | [PDF report](report/report.pdf)
+[GitHub Pages URL](https://mohamedtalaat23.github.io/iron-district-gym/) | [PDF report](report/report.pdf)
 
 ## Topic and purpose
 

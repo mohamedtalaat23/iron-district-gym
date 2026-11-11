@@ -1,8 +1,6 @@
 name: Publish website
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +9,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: iron-district-static-pages
   cancel-in-progress: false
 
 jobs:
