@@ -53,6 +53,7 @@ HTML5 parsing found no parser errors or duplicate IDs, and local file references
 - Gym photograph: [Unsplash asset](https://images.unsplash.com/photo-1534438327276-14e5300c3a48), included as `assets/images/gym.jpg`.
 - Training video: [Pexels video 3209241](https://www.pexels.com/video/3209241/), included as `assets/video/training.mp4`.
 - Framework: [Bootstrap 5.3.3](https://getbootstrap.com/), included locally with its MIT license notice retained.
+- Hosting: GitHub Pages, using GitHub's [static deployment workflow](https://github.com/actions/starter-workflows/blob/main/pages/static.yml) to upload and publish the files without compilation.
 - Gym name, classes, timetable and prices describe a fictional business.
 
 ## Page screenshots
