@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Try the static membership form for the fictional Iron District gym.">
+  <title>Join us | Iron District</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">IRON DISTRICT</a>
+      <a href="index.html">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="schedule.html">Schedule</a>
+      <a class="active" aria-current="page" href="join.html">Join us</a>
+    </nav>
+  </header>
+  <main class="container join-page">
+    <section>
+      <p class="intro">YOUR FIRST STEP</p>
+      <h1>Join the district</h1>
+      <p>This form is a demonstration. Use fictional details and a made-up password.</p>
+      <p>All fields are required except your message. Ages 18-100.</p>
+      <!-- Unnamed personal fields are validated but are not submitted. -->
+      <form action="join.html#form-note" method="get">
+        <div class="mb-3">
+          <label class="form-label" for="full-name">Full name</label>
+          <input class="form-control" type="text" id="full-name" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-control" type="email" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="password">Demo password (at least 8 characters)</label>
+          <input class="form-control" type="password" id="password" minlength="8" autocomplete="off" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="age">Age (18-100)</label>
+          <input class="form-control" type="number" id="age" min="18" max="100" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="start-date">Preferred start date</label>
+          <input class="form-control" type="date" id="start-date" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="class-choice">First class</label>
+          <select class="form-select" id="class-choice" required>
+            <option value="">Choose a class</option>
+            <option>Strength Foundations</option>
+            <option>Powerlifting</option>
+            <option>Mobility</option>
+          </select>
+        </div>
+        <!-- A shared name makes the two membership radios a single group. -->
+        <fieldset class="mb-3">
+          <legend>Membership</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="start" name="membership" value="start" required>
+            <label class="form-check-label" for="start">Start - 650 EGP / month</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="build" name="membership" value="build" required>
+            <label class="form-check-label" for="build">Build - 950 EGP / month</label>
+          </div>
+        </fieldset>
+        <div class="mb-3">
+          <label class="form-label" for="message">Message (optional)</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="consent" required>
+          <label class="form-check-label" for="consent">I understand this is a demonstration.</label>
+        </div>
+        <button class="btn btn-danger" type="submit">Try the form</button>
+      </form>
+    </section>
+    <aside class="note" id="form-note">
+      <h2>Demonstration only</h2>
+      <p>The browser checks your entries before returning here. Only the membership choice is included in the URL. No personal field values are sent, and no account or booking is created.</p>
+    </aside>
+  </main>
+  <footer>Iron District &copy; 2026 · Fictional gym in Cairo · Student project</footer>
+</body>
+</html>

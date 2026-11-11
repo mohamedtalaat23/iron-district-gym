@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare the weekly timetable and two membership plans at Iron District.">
+  <title>Schedule &amp; memberships | Iron District</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">IRON DISTRICT</a>
+      <a href="index.html">Home</a>
+      <a href="classes.html">Classes</a>
+      <a class="active" aria-current="page" href="schedule.html">Schedule</a>
+      <a href="join.html">Join us</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section>
+      <p class="intro">MAKE TIME FOR YOURSELF</p>
+      <h1>Your weekly routine</h1>
+      <p>Example evening sessions. All times are Cairo local time.</p>
+      <div class="table-responsive" role="region" aria-label="Weekly class timetable" tabindex="0">
+        <table class="table table-bordered">
+          <caption>Weekly classes and session lengths</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Time</th>
+              <th scope="col">Class</th>
+              <th scope="col">Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Sunday covers two rows, so the next row needs no day cell. -->
+            <tr>
+              <th scope="rowgroup" rowspan="2">Sunday</th>
+              <td>17:00</td>
+              <td>Strength Foundations</td>
+              <td>45 min</td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td>Powerlifting</td>
+              <td>60 min</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">Tuesday</th>
+              <td>17:00</td>
+              <td>Mobility</td>
+              <td>30 min</td>
+            </tr>
+            <tr>
+              <td colspan="4">Please arrive 10 minutes before your class.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <h2>Two ways to join</h2>
+      <p>Illustrative monthly prices in Egyptian pounds. No payments are collected.</p>
+      <!-- This layout uses our own CSS Grid, rather than Bootstrap columns. -->
+      <div class="membership-grid">
+        <article class="card">
+          <div class="card-body">
+            <h3>Start</h3>
+            <p class="price">650 EGP / month</p>
+            <ul>
+              <li>8 gym visits per month</li>
+              <li>Beginner orientation</li>
+              <li>Access during staffed hours</li>
+            </ul>
+            <a class="btn btn-danger" href="join.html">Choose Start</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>Build</h3>
+            <p class="price">950 EGP / month</p>
+            <ul>
+              <li>Unlimited open training</li>
+              <li>8 classes per month</li>
+              <li>Beginner orientation</li>
+            </ul>
+            <a class="btn btn-danger" href="join.html">Choose Build</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>Iron District &copy; 2026 · Fictional gym in Cairo · Student project</footer>
+</body>
+</html>

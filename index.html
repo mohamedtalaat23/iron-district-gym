@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Iron District: a fictional Cairo gym for strength, movement and community.">
+  <title>Home | Iron District</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- The same navigation appears on every page. -->
+  <header>
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">IRON DISTRICT</a>
+      <a class="active" aria-current="page" href="index.html">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="join.html">Join us</a>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Bootstrap makes two columns on medium screens and larger. -->
+    <section>
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <p class="intro">CAIRO / STRENGTH / COMMUNITY</p>
+          <h1>Show up.<br>Get stronger.</h1>
+          <p>Welcome to <strong>Iron District</strong>, a fictional gym where beginners and experienced lifters train together.</p>
+          <p><em>Your pace. Your starting point.</em></p>
+          <a class="btn btn-danger" href="join.html">Join the district</a>
+          <a class="btn btn-outline-dark" href="classes.html">Explore classes</a>
+        </div>
+        <div class="col-md-6">
+          <figure class="gym-photo">
+            <img class="img-fluid" src="assets/images/gym.jpg" alt="Gym with weight racks, benches and training equipment">
+            <figcaption class="photo-label">A PLACE TO START</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <p class="intro">WHY TRAIN WITH US?</p>
+          <h2>A routine that fits you.</h2>
+          <ul>
+            <li>Learn the basics with supportive coaches.</li>
+            <li>Choose from three focused classes.</li>
+            <li>Build a consistent weekly habit.</li>
+          </ul>
+          <a href="schedule.html">See the timetable and memberships</a>
+        </div>
+        <div class="col-md-6">
+          <h2>Training in action</h2>
+          <video controls muted playsinline preload="metadata" poster="assets/images/gym.jpg" aria-label="Fitness training video">
+            <source src="assets/video/training.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="assets/video/training.mp4">Download the video.</a>
+          </video>
+          <p class="media-note">Stock footage: a gym-goer trains on a cable machine with a trainer nearby.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>Iron District &copy; 2026 · Fictional gym in Cairo · Student project</footer>
+</body>
+</html>

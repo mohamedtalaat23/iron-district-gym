@@ -1,0 +1,146 @@
+/* Base colors, fonts and links. Bootstrap is loaded before this file. */
+body {
+  margin: 0;
+  background: #f3f1e9;
+  color: #20211f;
+  font-family: "Trebuchet MS", sans-serif;
+  line-height: 1.6;
+}
+a {
+  color: #a52b1b;
+}
+a:hover {
+  color: #702013;
+}
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #bb321f;
+  outline-offset: 4px;
+}
+h1, h2, h3 {
+  font-family: Impact, "Arial Narrow", sans-serif;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2rem;
+}
+/* Flexbox lets the links wrap when there is less space. */
+header {
+  background: #20211f;
+}
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.site-nav a {
+  color: #f3f1e9;
+  text-decoration: none;
+}
+.site-nav a:hover, .site-nav .active {
+  color: #ffb09b;
+  text-decoration: underline;
+}
+.brand {
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.intro {
+  color: #a52b1b;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* The photo is the reference point for the absolutely positioned label. */
+.gym-photo {
+  position: relative;
+  margin: 0;
+}
+.photo-label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #a52b1b;
+  color: white;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+}
+video {
+  display: block;
+  width: 100%;
+  background: #20211f;
+}
+.media-note {
+  font-size: 0.85rem;
+}
+.card {
+  background: #faf9f5;
+  border: 1px solid #ccc8bb;
+  border-radius: 0;
+}
+.card-body {
+  padding: 24px;
+}
+.note {
+  background: #e5e1d5;
+  border-left: 4px solid #a52b1b;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+/* Grid creates two equal membership columns. */
+.membership-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.price {
+  color: #a52b1b;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.table {
+  min-width: 500px;
+}
+.join-page {
+  max-width: 650px;
+}
+legend {
+  font-size: 1rem;
+}
+footer {
+  background: #20211f;
+  color: #f3f1e9;
+  padding: 24px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+/* Phones: stack the plans, give the brand its own row, reduce spacing. */
+@media (max-width: 767px) {
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+  .brand {
+    width: 100%;
+  }
+  .site-nav {
+    gap: 15px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  section {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
